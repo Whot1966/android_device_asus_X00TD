@@ -23,6 +23,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
 
+# Whot1966 extra packages
+$(call inherit-product, vendor/PixelLauncher/PixelLauncher.mk)
+PIXEL_LAUNCHER_VARIANT := khonsu
+ICONS_VARIANT := rkicons
+AOSP_ENHANCER := true
+
+PRODUCT_PACKAGES += \
+    PrebuiltChromium \
+    PrebuiltGcam
+
 # Wifi
 PRODUCT_PACKAGES += \
     X00TDWifiOverlay
