@@ -8,5 +8,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_X00TD.mk
 
 COMMON_LUNCH_CHOICES := \
+    aosp_X00TD-eng \
+    aosp_X00TD-user \
     aosp_X00TD-userdebug
 
