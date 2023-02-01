@@ -26,11 +26,12 @@ PRODUCT_COPY_FILES += \
 # Whot1966 extra packages
 $(call inherit-product, vendor/PixelLauncher/PixelLauncher.mk)
 PIXEL_LAUNCHER_VARIANT := khonsu
-ICONS_VARIANT := rkicons
+ICONS_VARIANT := teamfilesicons
 AOSP_ENHANCER := true
 
 PRODUCT_PACKAGES += \
     PrebuiltChromium \
+    PrebuiltBromiteWebview \
     PrebuiltGcam
 
 # Wifi
